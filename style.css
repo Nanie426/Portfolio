@@ -1,0 +1,113 @@
+body {
+  background-color: linear-gradient(150deg, #e3e6f6, #eef0fa);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
+  display: block  ;
+  width: 100%  ;
+}
+
+main {
+  width: 100%  ;
+}
+
+@keyframes duckRunRightToRight {
+  0% {
+    transform: translateX(160px);
+  }
+  100% {
+    transform: translateX(150px);
+  }
+}
+
+.duck-pull-container {
+  animation: duckRunRightToRight 2.5s ease-out forwards;
+  position: absolute;
+  top: -50px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.duck-img {
+  transform: scaleX(-1);
+}
+
+.duck-pull-container.show #greeting {
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+.about-section .about-animate {
+  opacity: 0;
+  transform: translateY(24px) scale(0.98);
+  filter: blur(10px);
+  transition:
+    opacity 700ms ease,
+    transform 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 700ms ease;
+  transition-delay: var(--delay, 0ms);
+  will-change: opacity, transform, filter;
+}
+
+.about-section.is-visible .about-animate {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.about-section .duck-pull-container.about-animate {
+  animation: duckRunRightToRight 2.5s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-section .about-animate {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
+
+.skill-card {
+  overflow: visible;
+}
+
+.skill-card__icon {
+  will-change: transform;
+}
+
+.skill-card:hover .skill-card__icon {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.skill-card__details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 300ms ease-in-out,
+    opacity 300ms ease-in-out;
+}
+
+.skill-card:hover .skill-card__details {
+  max-height: 140px;
+  opacity: 1;
+}
+
+.skill-card {
+  overflow: visible;
+  align-self: flex-start; 
+  height: max-content;   
+}
