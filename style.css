@@ -4,6 +4,7 @@ body {
   overflow-x: hidden;
   display: block  ;
   width: 100%  ;
+  -ms-overflow-style: none;
 }
 
 main {
@@ -43,10 +44,6 @@ main {
 
 html {
   scrollbar-width: none;
-}
-
-body {
-  -ms-overflow-style: none;
 }
 
 .about-section .about-animate {
