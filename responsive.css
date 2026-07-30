@@ -1,124 +1,25 @@
 @media (max-width: 1024px) {
-    /* --- SỬA LỖI MENU 3 GẠCH TRÊN IPAD --- */
-    header nav {
-        display: none !important;
-    }
-    header #menu-btn {
-        display: block !important;
-    }
-
-    #About-me {
-        min-height: auto;
-        padding: 5rem 0 3rem;
-    }
-
-    #About-me > div.relative.mt-20 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-        width: 100%;
-        height: auto;
-        padding: 1rem 1.25rem 2rem;
-        margin-top: 0;
-    }
-
-    #About-me > div.relative.mt-20 > div:first-child {
+    #About-me > div.relative > div:first-child { 
         order: 2;
-        width: 100%;
-        max-width: 42rem;
-        margin: 0;
-        transform: none;
+    }
+    
+    #About-me > div.relative > div:last-child { 
+        order: 1;
     }
 
-    #About-me > div.relative.mt-20 > div:last-child {
-        order: 1;
-        width: 100%;
-        max-width: 28rem;
-        margin: 0 auto;
-        transform: none;
-        display: flex;
-        justify-content: center;
+    #About-me .about-animate {
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+        animation: none !important;
     }
 
     #About-me #duckContainer {
         position: absolute;
         top: -40px;
-        left: 35%;
+        left: 50%;
         transform: translateX(-50%);
-    }
-
-    #About-me .duck-img {
-        width: 2.75rem;
-        height: 2.75rem;
-    }
-
-    #About-me .flex.flex-col.gap-7 {
-        gap: 1.25rem;
-        align-items: center;
-        text-align: center;
-    }
-
-    #About-me .about-animate {
-        opacity: 1;
-        transform: none;
-        filter: none;
-    }
-
-    #About-me .skill-cards {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1rem;
-    }
-
-    #About-me .skill-card {
-        width: 100%;
-    }
-
-    #About-me .flex.flex-col.items-center.gap-5 {
-        width: 100%;
-    }
-
-    #About-me .flex.flex-col.items-center.gap-5 > div.relative img[alt="Kim Ngân"] {
-        width: 105% !important;
-        height: 105% !important;
-        object-fit: contain !important;
-        bottom: 0 !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-    }
-
-    #tech-stack .w-\[1px\] {
-        display: none !important;
-    }
-    #tech-stack .mb-10,
-    #projects .mb-10 {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #tech-stack .max-w-5xl {
-        margin: 0 auto !important;
-        padding: 0 1rem !important; 
-        width: 100% !important;
-    }
-
-    #tech-stack .max-w-5xl .grid,
-    #tech-stack .max-w-5xl .flex.flex-wrap {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 1.25rem 1rem;
-        justify-content: center !important; 
-        margin: 0 auto !important;
-    }
-
-    #projects .grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    footer#contact .grid {
-        grid-template-columns: 1fr;
+        margin-left: 0 !important;
     }
 
     #mobile-menu {
@@ -126,67 +27,42 @@
         right: 1rem;
         top: 4.5rem;
     }
+
+    #About-me img[alt="Kim Ngân"] {
+        width: 105% !important;
+        height: 105% !important;
+        object-fit: contain !important;
+        bottom: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
 }
 
 @media (max-width: 767px) {
-    #About-me {
-        padding: 4.5rem 0 2.5rem;
-    }
-
-    #About-me > div.relative.mt-20 {
-        padding: 0 1rem;
-        gap: 2rem;
-    }
-
-    #About-me > div.relative.mt-20 > div:first-child {
-        order: 2;
-    }
-
-    #About-me > div.relative.mt-20 > div:last-child {
-        order: 1;
-    }
-
-    #About-me .skill-cards {
-        grid-template-columns: 1fr;
-    }
-    
-   #About-me .flex.flex-col.items-center.gap-5 > div.relative {
+    #About-me .flex.flex-col.items-center.gap-5 > div.relative {
         width: 17rem !important;
         height: 19rem !important;
         margin: 1.5rem auto -2.5rem !important;
     }
 
-    #About-me .flex.flex-col.items-center.gap-5 > div.relative img[alt="Kim Ngân"] {
+    #About-me img[alt="Kim Ngân"] {
         width: 110% !important;      
         max-width: 110% !important;
         height: 115% !important;      
-        object-fit: contain !important; 
-        bottom: 0 !important;
-        left: 50% !important;       
-        transform: translateX(-50%) !important; 
     }
 
-    #About-me .text-4xl,
+    #About-me .text-3xl, 
+    #About-me .text-4xl, 
+    #About-me .text-5xl, 
     #About-me .text-6xl {
-        font-size: clamp(1.8rem, 8vw, 2.5rem);
-        line-height: 1.1;
-    }
-
-    #About-me .text-2xl {
-        font-size: clamp(1.2rem, 5vw, 1.6rem);
+        font-size: clamp(1.8rem, 8vw, 2.5rem) !important;
+        line-height: 1.1 !important;
     }
     
-    #About-me p {
-        text-align: center !important;
-    }
-
-    #projects .grid {
-        grid-template-columns: 1fr !important;
-    }
-
-    #tech-stack .max-w-5xl .grid,
-    #tech-stack .max-w-5xl .flex.flex-wrap {
-        gap: 1rem 0.5rem !important; 
+    #About-me .text-xl, 
+    #About-me .text-2xl, 
+    #About-me .text-3xl {
+        font-size: clamp(1.2rem, 5vw, 1.6rem) !important;
     }
 
     #tech-stack .group img {
@@ -196,9 +72,9 @@
     }
     
     #tech-stack .group h3 {
-        font-size: 0.8rem !important; 
+        font-size: 0.85rem !important; 
     }
-
+    
     #tech-stack .group p {
         font-size: 0.65rem !important;
         line-height: 1.2 !important;

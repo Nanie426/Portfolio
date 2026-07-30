@@ -22,809 +22,548 @@
     
     <title>Nguyen Thi Kim Ngan</title>
   </head>
-  <body
-    class="min-h-screen text-[#2a3a30] font-sans relative flex flex-col items-center justify-center"
-  >
-    <header
-      id="header"
-      class="fixed top-0 left-0 w-full px-8 md:px-12 py-3 flex justify-between items-center z-50 transition-all duration-300"
-    >
-      <div class="flex items-center space-x-2 cursor-pointer">
-        <div class="flex flex-col leading-[1.1]">
-          <span class="font-normal text-[13px] tracking-widest text-[#166F63]"
-            >NGUYEN THI</span
-          >
-          <span
-            class="font-extrabold text-sm tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-[#7df4da] to-[#4a9eff] drop-shadow-[0_1px_1px_rgba(0.1,0,0,0.1)]"
-            >KIM NGAN</span
-          >
-        </div>
+  <body class="min-h-screen text-[#2a3a30] font-sans relative flex flex-col items-center justify-center">
+  <!-- HEADER -->
+  <header id="header" class="fixed top-0 left-0 w-full px-5 md:px-8 lg:px-12 py-3 flex justify-between items-center z-50 transition-all duration-300 bg-white/50 backdrop-blur-md lg:bg-transparent lg:backdrop-blur-none">
+    <div class="flex items-center space-x-2 cursor-pointer">
+      <div class="flex flex-col leading-[1.1]">
+        <span class="font-normal text-[11px] lg:text-[13px] tracking-widest text-[#166F63]">NGUYEN THI</span>
+        <span class="font-extrabold text-xs lg:text-sm tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-[#7df4da] to-[#4a9eff] drop-shadow-[0_1px_1px_rgba(0.1,0,0,0.1)]">KIM NGAN</span>
       </div>
-
-      <nav class="hidden lg:flex space-x-12 text-[12px] uppercase tracking-[0.2em] items-center">
-        <a href="#About-me" class="font-bold hover:text-[#6a7d6d] transition-colors">About me</a>
-        <a href="#tech-stack" class="font-bold hover:text-[#6a7d6d] transition-colors">Tech stack</a>
-        <a href="#projects" class="font-bold hover:text-[#6a7d6d] transition-colors">Projects</a>
-        <a href="#contact" class="font-bold hover:text-[#6a7d6d] transition-colors">Contact</a>
-      </nav>
-
-      <button id="menu-btn" class="block lg:hidden text-2xl text-black focus:outline-none">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </header>
-
-    <div id="mobile-menu" class="fixed top-16 right-4 lg:right-12 w-48 bg-white/60 backdrop-blur-md border border-white/40 shadow-[0_8px_30px_rgba(0,0,0,0.08)] rounded-2xl z-[60] flex flex-col py-5 px-5 space-y-4 text-[11px] font-bold uppercase tracking-[0.15em] transition-all duration-300 opacity-0 pointer-events-none -translate-y-2">
-      <a href="#About-me" class="mobile-link text-slate-700 hover:text-[#166F63] transition-colors">About me</a>
-      <a href="#tech-stack" class="mobile-link text-slate-700 hover:text-[#166F63] transition-colors">Tech stack</a>
-      <a href="#projects" class="mobile-link text-slate-700 hover:text-[#166F63] transition-colors">Projects</a>
-      <a href="#contact" class="mobile-link text-slate-700 hover:text-[#166F63] transition-colors">Contact</a>
     </div>
-    <main>
-      <section
-        id="About-me"
-        class="about-section relative w-full min-h-screen lg:h-screen flex flex-col items-center justify-center overflow-hidden"
-      >
-  <div class="bg-frame absolute inset-0 z-0 pointer-events-none">
-    <div class="dot-grid tl"></div>
-    <div class="dot-grid tr"></div>
-    <div class="blob-pale"></div>
-    <div class="blob-vivid"></div>
+
+    <nav class="hidden lg:flex space-x-12 text-[12px] uppercase tracking-[0.2em] items-center">
+      <a href="#About-me" class="font-bold hover:text-[#6a7d6d] transition-colors">About me</a>
+      <a href="#tech-stack" class="font-bold hover:text-[#6a7d6d] transition-colors">Tech stack</a>
+      <a href="#projects" class="font-bold hover:text-[#6a7d6d] transition-colors">Projects</a>
+      <a href="#contact" class="font-bold hover:text-[#6a7d6d] transition-colors">Contact</a>
+    </nav>
+
+    <button id="menu-btn" class="block lg:hidden text-2xl text-black focus:outline-none">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="fixed top-16 right-4 w-48 bg-white/80 backdrop-blur-md border border-white/40 shadow-[0_8px_30px_rgba(0,0,0,0.08)] rounded-2xl z-[60] flex flex-col py-5 px-5 space-y-4 text-[11px] font-bold uppercase tracking-[0.15em] transition-all duration-300 opacity-0 pointer-events-none -translate-y-2 lg:hidden">
+    <a href="#About-me" class="mobile-link text-slate-700 hover:text-[#166F63] transition-colors">About me</a>
+    <a href="#tech-stack" class="mobile-link text-slate-700 hover:text-[#166F63] transition-colors">Tech stack</a>
+    <a href="#projects" class="mobile-link text-slate-700 hover:text-[#166F63] transition-colors">Projects</a>
+    <a href="#contact" class="mobile-link text-slate-700 hover:text-[#166F63] transition-colors">Contact</a>
   </div>
 
-  <div
-    class="relative mt-20 z-20 flex flex-col lg:flex-row items-center justify-between w-full px-5 sm:px-8 md:px-12 lg:px-24 py-12 md:py-16 gap-10 lg:gap-12 h-auto lg:h-full"
-  >
-    <div class="w-full lg:w-5/12 relative lg:ml-20 about-animate" style="--delay: 60ms;">
-      <div
-        id="duckContainer"
-        class="duck-pull-container flex items-center ml-[-160px]"
-      >
-        <span
-          id="text-output"
-          class="text-2xl font-bold text-[#526354] font-serif ml-2"
-          style="font-family: &quot;Noto Serif JP&quot;, serif"
-        ></span>
-
-        <img
-          src="image/duck.gif"
-          alt="Duck"
-          class="duck-img w-12 h-12 object-contain"
-        />
+  <main class="w-full overflow-hidden">
+    <!-- ABOUT ME SECTION -->
+    <section id="About-me" class="about-section relative w-full min-h-screen flex flex-col items-center justify-center">
+      <div class="bg-frame absolute inset-0 z-0 pointer-events-none">
+        <div class="dot-grid tl"></div>
+        <div class="dot-grid tr"></div>
+        <div class="blob-pale"></div>
+        <div class="blob-vivid"></div>
       </div>
 
-      <div class="flex flex-col gap-7">
-        <div class="text-[#1c261e] about-animate" style="--delay: 180ms;">
-          <span
-            class="text-3xl sm:text-4xl md:text-6xl text-black font-[650] leading-[0.9]"
-            >私は<span class="text-[#5b4fd1]">キム・ガン</span>。。。</span></span
-          ><br />
-          <span
-            class="text-xl sm:text-2xl md:text-4xl text-black font-[850]"
-          >
-            EVOLVING THROUGH CODE</span
-          >
-        </div>
-        <div class="w-[60px] h-1 bg-gradient-to-r from-[#8c65db] to-[#a0cfff] via-[#5b4fd1] shadow-[0_8px_32px_rgba(91,79,209,0.12)] rounded-sm about-animate" style="--delay: 240ms;"></div>
-        <div
-          class="text-black uppercase tracking-[0.1em] text-sm font-bold about-animate"
-          style="--delay: 300ms;"
-        >
-          About Me
-        </div>
-
-        <p class="text-[#6b7b6c] text-sm leading-relaxed text-justify about-animate" style="--delay: 360ms;">
-          As an Information Technology student with a passion for
-          programming, I am always eager to learn, explore efficient
-          solutions, and apply logical thinking throughout the software
-          development process. My goal is to become a
-          <strong>Full-Stack Software</strong>
-          Engineer, building high-quality applications while continuously
-          improving my skills and growing in the field of technology.
-        </p>
-      </div>
-
-      <div class="text-black uppercase tracking-[0.1em] text-sm font-bold mt-6 about-animate" style="--delay: 430ms;"><span class="inline-block w-[20px] h-1 rounded-full bg-gradient-to-r from-[#5b4fd1] via-[#8c65db] to-[#a0cfff] shadow-[0_8px_32px_rgba(91,79,209,0.12)]"></span></span>
-     Strengths & Orientation
-  </div>
-
-      <div class="mt-12 max-w-3xl flex flex-col gap-7 about-animate" style="--delay: 500ms;">
-        <div class="skill-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 about-animate" style="--delay: 560ms;">
+      <div class="relative mt-24 lg:mt-20 z-20 flex flex-col lg:flex-row items-center justify-between w-full max-w-7xl mx-auto px-5 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 gap-12 lg:gap-8 h-auto">
+        
+        <!-- Left: Text Content -->
+        <div class="w-full lg:w-6/12 relative flex flex-col items-center lg:items-start text-center lg:text-left about-animate" style="--delay: 60ms;">
           
-          <div class="skill-card group relative pt-8 rounded-2xl border border-[#d9e8e2] bg-white/75 px-4 pb-4 shadow-[0_10px_30px_rgba(60,88,76,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(60,88,76,0.12)] sm:flex-1">
-            <div class="skill-card__icon absolute -top-6 left-1/2 -translate-x-1/2 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#e6f6f3] text-[#166F63] ring-4 ring-white shadow-md transition-transform duration-300 group-hover:scale-110">
-              <img src="icon/brain.png" class="w-7 h-7 object-contain" alt="Brain Icon" />
-            </div>
-
-            <div class="text-center">
-              <h3 class="text-[11px] font-extrabold tracking-[0.16em] text-[#2a3a30] uppercase">
-                Logical Thinking
-              </h3>
-            </div>
-
-            <div class="skill-card__details grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out group-hover:grid-rows-[1fr] group-hover:opacity-100">
-              <div class="overflow-hidden">
-                <p class="mt-3 text-center text-sm leading-base text-[#5f6f62]">
-                  Quickly analyze problems to develop clear, efficient, and optimal solutions.
-                </p>
-              </div>
-            </div>
+          <div id="duckContainer" class="duck-pull-container flex items-center justify-center lg:justify-start lg:ml-[-160px] mb-4">
+            <span id="text-output" class="text-xl lg:text-2xl font-bold text-[#526354] font-serif ml-2" style="font-family: 'Noto Serif JP', serif"></span>
+            <img src="image/duck.gif" alt="Duck" class="duck-img w-10 h-10 lg:w-12 lg:h-12 object-contain" />
           </div>
 
-          <div class="skill-card group relative pt-8 rounded-2xl border border-[#d9e8e2] bg-white/75 px-4 pb-4 shadow-[0_10px_30px_rgba(60,88,76,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(60,88,76,0.12)] sm:flex-1">
-            <div class="skill-card__icon absolute -top-6 left-1/2 -translate-x-1/2 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#fee2e2] text-[#ef4444] ring-4 ring-white shadow-md transition-transform duration-300 group-hover:scale-110">
-              <img src="icon/problem-solving.png" class="w-7 h-7 object-contain" alt="Icon 6" />
-            </div>
-
-            <div class="text-center">
-              <h3 class="text-[11px] font-extrabold tracking-[0.16em] text-[#2a3a30] uppercase">
-                Problem Solving
-              </h3>
-            </div>
-
-            <div class="skill-card__details grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out group-hover:grid-rows-[1fr] group-hover:opacity-100">
-              <div class="overflow-hidden">
-                <p class="mt-3 text-center text-sm leading-base text-[#5f6f62]">
-                  Identify issues quickly and create effective solutions to improve software performance and reliability.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-card group relative pt-8 rounded-2xl border border-[#d9e8e2] bg-white/75 px-4 pb-4 shadow-[0_10px_30px_rgba(60,88,76,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(60,88,76,0.12)] sm:flex-1">
-            <div class="skill-card__icon absolute -top-6 left-1/2 -translate-x-1/2 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#fef3c7] text-[#d97706] ring-4 ring-white shadow-md transition-transform duration-300 group-hover:scale-110">
-              <img src="icon/language.png" class="w-7 h-7 object-contain" alt="Icon 4" />
-            </div>
-
-            <div class="text-center">
-              <h3 class="text-[11px] font-extrabold tracking-[0.16em] text-[#2a3a30] uppercase">
-                Language Skills
-              </h3>
-            </div>
-
-            <div class="skill-card__details grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out group-hover:grid-rows-[1fr] group-hover:opacity-100">
-              <div class="overflow-hidden">
-                <p class="mt-3 text-center text-sm leading-base text-[#5f6f62]">
-                  Confidently communicate in English and Japanese to support teamwork, learning, and cross-cultural collaboration.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 about-animate" style="--delay: 740ms;">
-          <div class="skill-card group relative pt-8 rounded-2xl border border-[#d9e8e2] bg-white/75 px-4 pb-4 shadow-[0_10px_30px_rgba(60,88,76,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(60,88,76,0.12)] sm:flex-1">
-            <div class="skill-card__icon absolute -top-6 left-1/2 -translate-x-1/2 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#eef5ff] text-[#3f74c5] ring-4 ring-white shadow-md transition-transform duration-300 group-hover:scale-110">
-              <img src="icon/timetable.png" class="w-7 h-7 object-contain" alt="Discipline Icon" />
-            </div>
-
-            <div class="text-center">
-              <h3 class="text-[11px] font-extrabold tracking-[0.16em] text-[#2a3a30] uppercase">
-                Discipline
-              </h3>
-            </div>
-
-            <div class="skill-card__details grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out group-hover:grid-rows-[1fr] group-hover:opacity-100">
-              <div class="overflow-hidden">
-                <p class="mt-3 text-center text-sm leading-base text-[#5f6f62]">
-                  Adhere to processes, ensure quality, and commit to meeting deadlines responsibly.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-card group relative pt-8 rounded-2xl border border-[#d9e8e2] bg-white/75 px-4 pb-4 shadow-[0_10px_30px_rgba(60,88,76,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(60,88,76,0.12)] sm:flex-1">
-            <div class="skill-card__icon absolute -top-6 left-1/2 -translate-x-1/2 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#fae8ff] text-[#c084fc] ring-4 ring-white shadow-md transition-transform duration-300 group-hover:scale-110">
-              <img src="icon/adaptation.png" class="w-7 h-7 object-contain" alt="Icon 5" />
-            </div>
-
-            <div class="text-center">
-              <h3 class="text-[11px] font-extrabold tracking-[0.16em] text-[#2a3a30] uppercase">
-                Self-Learning
-              </h3>
-            </div>
-
-            <div class="skill-card__details grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out group-hover:grid-rows-[1fr] group-hover:opacity-100">
-              <div class="overflow-hidden">
-                <p class="mt-3 text-center text-sm leading-base text-[#5f6f62]">
-                  Continuously learn new technologies and improve my skills through practice, documentation, and real-world projects.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-card group relative pt-8 rounded-2xl border border-[#d9e8e2] bg-white/75 px-4 pb-4 shadow-[0_10px_30px_rgba(60,88,76,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(60,88,76,0.12)] sm:flex-1">
-            <div class="skill-card__icon absolute -top-6 left-1/2 -translate-x-1/2 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#f2f3eb] text-[#6a7d6d] ring-4 ring-white shadow-md transition-transform duration-300 group-hover:scale-110">
-              <img src="icon/fuji.png" class="w-7 h-7 object-contain" alt="Fuji Icon" />
-            </div>
-
-            <div class="text-center">
-              <h3 class="text-[11px] font-extrabold tracking-[0.16em] text-[#2a3a30] uppercase">
-                Career Goals
-              </h3>
-            </div>
-
-            <div class="skill-card__details grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out group-hover:grid-rows-[1fr] group-hover:opacity-100">
-              <div class="overflow-hidden">
-                <p class="mt-3 text-center text-sm leading-base text-[#5f6f62]">
-                  Aspiring to build a professional career within the Japanese technology industry.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="w-full lg:w-5/12 flex justify-center lg:mt-28 translate-x-0 lg:-translate-x-6 about-animate" style="--delay: 120ms;">
-      <div class="flex flex-col items-center gap-5">
-        <div class="relative w-72 sm:w-80 md:w-[22rem] h-72 sm:h-80 md:h-[26rem] about-animate" style="--delay: 180ms;">
-          <div class="absolute -inset-8 bg-[#f7e8e6] opacity-60 blur-3xl transform rotate-12 scale-110 pointer-events-none"></div>
-          <div class="absolute inset-3 bg-white/35 backdrop-blur-sm rounded-[2rem] shadow-[0_12px_35px_rgba(91,79,209,0.08)] border border-white/35 z-0"></div>
-          <div class="absolute inset-0 z-0 pointer-events-none">
-            <div class="absolute -top-4 -left-12 text-8xl md:text-5xl transform -rotate-12 drop-shadow-md">
-              🕶️
-            </div>
-            <div class="absolute bottom-8 -right-20 text-4xl md:text-5xl transform rotate-[15deg] drop-shadow-md">
-              🌻
-            </div>
-            <div class="absolute top-16 -right-12 text-xl font-bold font-mono text-indigo-600 bg-white/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-indigo-100 shadow-lg transform rotate-6">
-              &lt;/&gt;
+          <div class="flex flex-col gap-6 items-center lg:items-start">
+            <div class="text-[#1c261e] about-animate" style="--delay: 180ms;">
+              <span class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-black font-[650] leading-[1.1] lg:leading-[0.9]">
+                私は<span class="text-[#5b4fd1]">キム・ガン</span>。。。
+              </span><br />
+              <span class="text-xl sm:text-2xl md:text-3xl xl:text-4xl text-black font-[850] mt-2 inline-block">
+                EVOLVING THROUGH CODE
+              </span>
             </div>
             
+            <div class="w-[60px] h-1 bg-gradient-to-r from-[#8c65db] to-[#a0cfff] via-[#5b4fd1] shadow-[0_8px_32px_rgba(91,79,209,0.12)] rounded-sm about-animate" style="--delay: 240ms;"></div>
+            
+            <div class="text-black uppercase tracking-[0.1em] text-sm font-bold about-animate" style="--delay: 300ms;">
+              About Me
+            </div>
+
+            <p class="text-[#6b7b6c] text-sm leading-relaxed text-center lg:text-justify max-w-2xl about-animate" style="--delay: 360ms;">
+              As an Information Technology student with a passion for programming, I am always eager to learn, explore efficient solutions, and apply logical thinking throughout the software development process. My goal is to become a <strong>Full-Stack Software Engineer</strong>, building high-quality applications while continuously improving my skills and growing in the field of technology.
+            </p>
           </div>
-          <img
-            src="image/Nanie.png"
-            alt="Kim Ngân"
-            class="absolute inset-x-0 bottom-0 mx-auto w-[112%] sm:w-[115%] max-w-none h-auto z-10 object-contain drop-shadow-xl pointer-events-none"
-          />
+
+          <div class="text-black uppercase tracking-[0.1em] text-sm font-bold mt-10 about-animate flex items-center gap-2" style="--delay: 430ms;">
+            <span class="inline-block w-[20px] h-1 rounded-full bg-gradient-to-r from-[#5b4fd1] via-[#8c65db] to-[#a0cfff] shadow-[0_8px_32px_rgba(91,79,209,0.12)]"></span>
+            Strengths & Orientation
+          </div>
+
+          <!-- Skill Cards -->
+          <div class="mt-8 w-full flex flex-col gap-5 about-animate" style="--delay: 500ms;">
+            <div class="skill-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-4 about-animate" style="--delay: 560ms;">
+              
+              <!-- Card 1 -->
+              <div class="skill-card group relative pt-8 rounded-2xl border border-[#d9e8e2] bg-white/75 px-4 pb-4 shadow-[0_10px_30px_rgba(60,88,76,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <div class="skill-card__icon absolute -top-6 left-1/2 -translate-x-1/2 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#e6f6f3] text-[#166F63] ring-4 ring-white shadow-md transition-transform duration-300 group-hover:scale-110">
+                  <img src="icon/brain.png" class="w-6 h-6 object-contain" alt="Brain Icon" />
+                </div>
+                <div class="text-center mt-2">
+                  <h3 class="text-[11px] font-extrabold tracking-[0.16em] text-[#2a3a30] uppercase">Logical Thinking</h3>
+                </div>
+                <div class="skill-card__details grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out group-hover:grid-rows-[1fr] group-hover:opacity-100">
+                  <div class="overflow-hidden">
+                    <p class="mt-3 text-center text-sm leading-relaxed text-[#5f6f62]">Quickly analyze problems to develop clear, efficient, and optimal solutions.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="skill-card group relative pt-8 rounded-2xl border border-[#d9e8e2] bg-white/75 px-4 pb-4 shadow-[0_10px_30px_rgba(60,88,76,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <div class="skill-card__icon absolute -top-6 left-1/2 -translate-x-1/2 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#fee2e2] text-[#ef4444] ring-4 ring-white shadow-md transition-transform duration-300 group-hover:scale-110">
+                  <img src="icon/problem-solving.png" class="w-6 h-6 object-contain" alt="Icon 6" />
+                </div>
+                <div class="text-center mt-2">
+                  <h3 class="text-[11px] font-extrabold tracking-[0.16em] text-[#2a3a30] uppercase">Problem Solving</h3>
+                </div>
+                <div class="skill-card__details grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out group-hover:grid-rows-[1fr] group-hover:opacity-100">
+                  <div class="overflow-hidden">
+                    <p class="mt-3 text-center text-sm leading-relaxed text-[#5f6f62]">Identify issues quickly and create effective solutions to improve software performance and reliability.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="skill-card group relative pt-8 rounded-2xl border border-[#d9e8e2] bg-white/75 px-4 pb-4 shadow-[0_10px_30px_rgba(60,88,76,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <div class="skill-card__icon absolute -top-6 left-1/2 -translate-x-1/2 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#fef3c7] text-[#d97706] ring-4 ring-white shadow-md transition-transform duration-300 group-hover:scale-110">
+                  <img src="icon/language.png" class="w-6 h-6 object-contain" alt="Icon 4" />
+                </div>
+                <div class="text-center mt-2">
+                  <h3 class="text-[11px] font-extrabold tracking-[0.16em] text-[#2a3a30] uppercase">Language Skills</h3>
+                </div>
+                <div class="skill-card__details grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out group-hover:grid-rows-[1fr] group-hover:opacity-100">
+                  <div class="overflow-hidden">
+                    <p class="mt-3 text-center text-sm leading-relaxed text-[#5f6f62]">Confidently communicate in English and Japanese to support teamwork, learning, and cross-cultural collaboration.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Card 4 -->
+              <div class="skill-card group relative pt-8 rounded-2xl border border-[#d9e8e2] bg-white/75 px-4 pb-4 shadow-[0_10px_30px_rgba(60,88,76,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <div class="skill-card__icon absolute -top-6 left-1/2 -translate-x-1/2 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#eef5ff] text-[#3f74c5] ring-4 ring-white shadow-md transition-transform duration-300 group-hover:scale-110">
+                  <img src="icon/timetable.png" class="w-6 h-6 object-contain" alt="Discipline Icon" />
+                </div>
+                <div class="text-center mt-2">
+                  <h3 class="text-[11px] font-extrabold tracking-[0.16em] text-[#2a3a30] uppercase">Discipline</h3>
+                </div>
+                <div class="skill-card__details grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out group-hover:grid-rows-[1fr] group-hover:opacity-100">
+                  <div class="overflow-hidden">
+                    <p class="mt-3 text-center text-sm leading-relaxed text-[#5f6f62]">Adhere to processes, ensure quality, and commit to meeting deadlines responsibly.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="skill-card group relative pt-8 rounded-2xl border border-[#d9e8e2] bg-white/75 px-4 pb-4 shadow-[0_10px_30px_rgba(60,88,76,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <div class="skill-card__icon absolute -top-6 left-1/2 -translate-x-1/2 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#fae8ff] text-[#c084fc] ring-4 ring-white shadow-md transition-transform duration-300 group-hover:scale-110">
+                  <img src="icon/adaptation.png" class="w-6 h-6 object-contain" alt="Icon 5" />
+                </div>
+                <div class="text-center mt-2">
+                  <h3 class="text-[11px] font-extrabold tracking-[0.16em] text-[#2a3a30] uppercase">Self-Learning</h3>
+                </div>
+                <div class="skill-card__details grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out group-hover:grid-rows-[1fr] group-hover:opacity-100">
+                  <div class="overflow-hidden">
+                    <p class="mt-3 text-center text-sm leading-relaxed text-[#5f6f62]">Continuously learn new technologies and improve my skills through practice, documentation, and real-world projects.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="skill-card group relative pt-8 rounded-2xl border border-[#d9e8e2] bg-white/75 px-4 pb-4 shadow-[0_10px_30px_rgba(60,88,76,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <div class="skill-card__icon absolute -top-6 left-1/2 -translate-x-1/2 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#f2f3eb] text-[#6a7d6d] ring-4 ring-white shadow-md transition-transform duration-300 group-hover:scale-110">
+                  <img src="icon/fuji.png" class="w-6 h-6 object-contain" alt="Fuji Icon" />
+                </div>
+                <div class="text-center mt-2">
+                  <h3 class="text-[11px] font-extrabold tracking-[0.16em] text-[#2a3a30] uppercase">Career Goals</h3>
+                </div>
+                <div class="skill-card__details grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out group-hover:grid-rows-[1fr] group-hover:opacity-100">
+                  <div class="overflow-hidden">
+                    <p class="mt-3 text-center text-sm leading-relaxed text-[#5f6f62]">Aspiring to build a professional career within the Japanese technology industry.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="flex flex-col items-center gap-4 relative z-20 about-animate" style="--delay: 260ms;">
-          <div class="flex flex-col sm:flex-row items-center gap-3 w-full justify-center">
-  <a
-    href="image/MyCV.pdf"
-    download
-    class="flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#3b82f6] to-[#a855f7] px-5 py-2 text-sm font-bold text-white shadow-[0_8px_20px_rgba(99,102,241,0.3)] transition-all hover:-translate-y-1 hover:shadow-[0_12px_25px_rgba(99,102,241,0.45)] cursor-pointer"
-  >
-    <i class="fa-solid fa-download text-base"></i>
-    Download CV
-  </a>
-  <a
-    href="#contact"
-    class="flex items-center justify-center gap-2 rounded-full bg-white px-5 py-2 text-sm font-bold text-[#6366f1] shadow-[0_8px_20px_rgba(148,163,184,0.15)] transition-all hover:-translate-y-1 hover:shadow-[0_12px_25px_rgba(148,163,184,0.25)] cursor-pointer border border-transparent hover:border-[#e0e7ff]"
-  >
-    <i class="fa-solid fa-paper-plane text-base"></i>
-    Say Hi
-  </a>
+        <!-- Right: Image Content -->
+        <div class="w-full lg:w-5/12 flex flex-col justify-center items-center mt-16 lg:mt-0 lg:translate-x-0 about-animate" style="--delay: 120ms;">
+          <div class="flex flex-col items-center gap-5">
+            <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 about-animate" style="--delay: 180ms;">
+              <div class="absolute -inset-8 bg-[#f7e8e6] opacity-60 blur-3xl transform rotate-12 scale-110 pointer-events-none"></div>
+              <div class="absolute inset-3 bg-white/35 backdrop-blur-sm rounded-[2rem] shadow-[0_12px_35px_rgba(91,79,209,0.08)] border border-white/35 z-0"></div>
+              <div class="absolute inset-0 z-0 pointer-events-none">
+                <div class="absolute -top-4 -left-6 lg:-left-12 text-6xl md:text-5xl transform -rotate-12 drop-shadow-md">🕶️</div>
+                <div class="absolute bottom-8 -right-10 lg:-right-16 text-4xl md:text-5xl transform rotate-[15deg] drop-shadow-md">🌻</div>
+                <div class="absolute top-12 -right-6 lg:-right-12 text-lg lg:text-xl font-bold font-mono text-indigo-600 bg-white/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-indigo-100 shadow-lg transform rotate-6">&lt;/&gt;</div>
+              </div>
+              <img src="image/Nanie.png" alt="Kim Ngân" class="absolute inset-x-0 bottom-0 mx-auto w-[110%] max-w-none h-auto z-10 object-contain drop-shadow-xl pointer-events-none" />
+            </div>
 
-</div>
+            <div class="flex flex-col items-center gap-5 relative z-20 mt-6 about-animate" style="--delay: 260ms;">
+              <div class="flex flex-wrap items-center gap-3 w-full justify-center">
+                <a href="image/MyCV.pdf" download class="flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#3b82f6] to-[#a855f7] px-6 py-2.5 text-sm font-bold text-white shadow-md hover:-translate-y-1 hover:shadow-lg transition-all cursor-pointer">
+                  <i class="fa-solid fa-download text-base"></i> Download CV
+                </a>
+                <a href="#contact" class="flex items-center justify-center gap-2 rounded-full bg-white px-6 py-2.5 text-sm font-bold text-[#6366f1] shadow-sm hover:-translate-y-1 hover:shadow-md transition-all cursor-pointer border border-transparent hover:border-[#e0e7ff]">
+                  <i class="fa-solid fa-paper-plane text-base"></i> Say Hi
+                </a>
+              </div>
 
-          <div class="flex items-center gap-3">
-            <a
-              href="https://github.com/Nanie426"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="GitHub"
-              class="flex h-8 w-8 items-center justify-center rounded-full border border-[#6366f1] bg-white/90 text-black transition-all hover:bg-[#6366f1] hover:text-white hover:scale-105 cursor-pointer"
-            >
-              <i class="fa-brands fa-github text-lg"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/nguyenthikimngan4206"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Facebook"
-              class="flex h-8 w-8 items-center justify-center rounded-full border border-[#6366f1] bg-white/90 text-black transition-all hover:bg-[#6366f1] hover:text-white hover:scale-105 cursor-pointer"
-            >
-              <i class="fa-brands fa-facebook-f text-lg"></i>
-            </a>
+              <div class="flex items-center gap-4">
+                <a href="https://github.com/Nanie426" target="_blank" rel="noreferrer" aria-label="GitHub" class="flex h-10 w-10 items-center justify-center rounded-full border border-[#6366f1] bg-white/90 text-black hover:bg-[#6366f1] hover:text-white hover:scale-105 transition-all cursor-pointer">
+                  <i class="fa-brands fa-github text-lg"></i>
+                </a>
+                <a href="https://www.facebook.com/nguyenthikimngan4206" target="_blank" rel="noreferrer" aria-label="Facebook" class="flex h-10 w-10 items-center justify-center rounded-full border border-[#6366f1] bg-white/90 text-black hover:bg-[#6366f1] hover:text-white hover:scale-105 transition-all cursor-pointer">
+                  <i class="fa-brands fa-facebook-f text-lg"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-  </div>
-</section>
-
-      <section id="tech-stack" class="py-20">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:ml-28">
-          <div class="mb-10">
-            <span
-              class="text-sm tracking-[0.15em] uppercase text-sky-500 font-semibold"
-            >
-              CORE COMPETENCIES
-            </span>
-
-            <h2 class="mt-2 text-4xl font-bold text-gray-900">
-              Tech Stack & Tools
-            </h2>
-          </div>
-
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-nowrap justify-items-center gap-8 lg:gap-10">
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="C++"
-              />
-
-              <h3 class="font-semibold text-gray-800">C++</h3>
-
-              <p class="text-xs text-gray-500 mt-1 leading-relaxed">
-                Object Oriented Programming
-              </p>
-            </div>
-
-            <!-- C# -->
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="C#"
-              />
-
-              <h3 class="font-semibold text-gray-800">C#</h3>
-
-              <p class="text-xs text-gray-500 mt-1">.NET Development</p>
-            </div>
-
-            <!-- Java -->
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="Java"
-              />
-
-              <h3 class="font-semibold text-gray-800">Java</h3>
-
-              <p class="text-xs text-gray-500 mt-1">Backend Programming</p>
-            </div>
-
-            <!-- Spring Boot -->
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="Spring Boot"
-              />
-
-              <h3 class="font-semibold text-gray-800">Spring Boot</h3>
-
-              <p class="text-xs text-gray-500 mt-1">REST API</p>
-            </div>
-            <!-- React -->
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="React"
-              />
-
-              <h3 class="font-semibold text-gray-800">React</h3>
-
-              <p class="text-xs text-gray-500 mt-1">Front-end UI</p>
-            </div>
-            <!-- JavaScript -->
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="JavaScript"
-              />
-
-              <h3 class="font-semibold text-gray-800">JavaScript</h3>
-
-              <p class="text-xs text-gray-500 mt-1">Interactive Web</p>
-            </div>
-
-            <!-- HTML -->
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="HTML"
-              />
-
-              <h3 class="font-semibold text-gray-800">HTML5</h3>
-
-              <p class="text-xs text-gray-500 mt-1">Semantic Web Structure</p>
-            </div>
-            <!-- CSS -->
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="CSS3"
-              />
-
-              <h3 class="font-semibold text-gray-800">CSS3</h3>
-
-              <p class="text-xs text-gray-500 mt-1">
-                Responsive & Modern Styling
-              </p>
-            </div>
-            <!-- SQL -->
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="SQL"
-              />
-
-              <h3 class="font-semibold text-gray-800">SQL</h3>
-
-              <p class="text-xs text-gray-500 mt-1">Database</p>
-            </div>
-
-            <div
-              class="hidden lg:block shrink-0 w-[1px] h-28 bg-gray-500/70 mx-3 self-center rounded-full"
-            ></div>
-            <!-- Docker -->
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="Docker"
-              />
-
-              <h3 class="font-semibold text-gray-800">Docker</h3>
-
-              <p class="text-xs text-gray-500 mt-1">Containerization</p>
-            </div>
-            <!-- Postman -->
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="Postman"
-              />
-
-              <h3 class="font-semibold text-gray-800">Postman</h3>
-
-              <p class="text-xs text-gray-500 mt-1">
-                API Testing & Development
-              </p>
-            </div>
-            <!-- Git -->
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="Git"
-              />
-
-              <h3 class="font-semibold text-gray-800">Git</h3>
-
-              <p class="text-xs text-gray-500 mt-1">Version Control</p>
-            </div>
-            <!-- GitHub -->
-            <div
-              class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"
-                alt="GitHub"
-              />
-
-              <h3 class="font-semibold text-gray-800">GitHub</h3>
-
-              <p class="text-xs text-gray-500 mt-1">Code Collaboration</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="py-20">
-        <div class="bg-frame absolute inset-0 z-[-2] pointer-events-none">
-  </div>
-        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:ml-18">
-          <div class="mb-10 text-center">
-            <span
-              class="text-sm tracking-[0.15em] uppercase text-sky-500 font-semibold"
-            >
-              My Projects
-            </span>
-
-            <h2 class="mt-2 text-4xl font-bold text-gray-900">
-              Featured Projects
-            </h2>
-          </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            
-            <!-- Project Card 1 -->
-            <div class="bg-white border border-slate-200 rounded-xl p-4 pb-2 shadow-sm">
-                <div class="w-full h-56 rounded-lg overflow-hidden mb-4">
-                    <img src="image/TroOnline.png" alt="Online Room Rental System" class="w-full h-full object-cover">
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2.5">Online Room Rental System</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Online Room Rental System an efficient management system built to facilitate room rental and management...
-                    </p>
-                    <div class="flex gap-2 mb-5">
-                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">React.js</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">Spring Boot</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">Java</span>
-                    </div>
-                    <div class="border-t border-slate-100 pt-2 flex items-center justify-between">
-                        <a href="https://github.com/Nanie426/TimTroTrucTuyen.git" class="text-slate-400 hover:text-slate-900 transition-colors" title="GitHub Repo">
-                        <i class="fa-brands fa-github text-xl"></i>
-                        </a>
-                        <a href="#" class="px-4 py-2 rounded-full border border-slate-300 text-sm font-semibold text-slate-800 transition-all 
-                    hover:bg-slate-100 hover:border-slate-400">
-    View Project
-</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 2 -->
-            <div class="bg-white border border-slate-200 rounded-xl p-4 pb-2 shadow-sm">
-                <div class="w-full h-56 rounded-lg overflow-hidden mb-4">
-                    <img src="image/QuanLyThuVien.png" alt="Library Management System" class="w-full h-full object-cover">
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2.5">Library Management System</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Library Management System aims to automate the library management system, making it easier to track books...
-                    </p>
-                    <div class="flex gap-2 mb-5">
-                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">C++</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">C#</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">Java</span>
-                    </div>
-                    <div class="border-t border-slate-100 pt-2 flex items-center justify-between">
-                        <a href="https://github.com/Nanie426/TimTroTrucTuyen.git" class="text-slate-400 hover:text-slate-900 transition-colors" title="GitHub Repo">
-                        <i class="fa-brands fa-github text-xl"></i>
-                        </a>
-                        <a href="#" class="px-4 py-2 rounded-full border border-slate-300 text-sm font-semibold text-slate-800 transition-all 
-                    hover:bg-slate-100 hover:border-slate-400">
-    View Project
-</a>
-                    </div>
-                </div>
-            </div>
-
-                <!-- Project Card 3 -->
-                <div class="bg-white border border-slate-200 rounded-xl p-4 pb-2 shadow-sm">
-                  <div class="w-full h-56 rounded-lg overflow-hidden mb-4 bg-gradient-to-br from-[#e8f7f3] via-[#f8fbff] to-[#e9eefc] flex items-center justify-center">
-                    <div class="text-center">
-                      <div class="w-20 h-20 mx-auto rounded-2xl bg-white/80 shadow-sm flex items-center justify-center text-3xl">📅</div>
-                      <p class="mt-3 text-xs font-semibold tracking-[0.2em] uppercase text-slate-500">Concept Demo</p>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2.5">Study Planner Dashboard</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                      A student planning tool for organizing classes, deadlines, and weekly goals in one clean dashboard.
-                    </p>
-                    <div class="flex gap-2 mb-5 flex-wrap">
-                      <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">React.js</span>
-                      <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">Tailwind CSS</span>
-                      <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">Chart.js</span>
-                    </div>
-                    <div class="border-t border-slate-100 pt-2 flex items-center justify-between">
-                      <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors" title="Demo only">
-                      <i class="fa-brands fa-github text-xl"></i>
-                      </a>
-                      <a href="#" class="px-4 py-2 rounded-full border border-slate-300 text-sm font-semibold text-slate-800 transition-all 
-                    hover:bg-slate-100 hover:border-slate-400">
-            View Project
-          </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="bg-white border border-slate-200 rounded-xl p-4 pb-2 shadow-sm">
-                  <div class="w-full h-56 rounded-lg overflow-hidden mb-4 bg-gradient-to-br from-[#fff3e6] via-[#fffaf4] to-[#edf4ff] flex items-center justify-center">
-                    <div class="text-center">
-                      <div class="w-20 h-20 mx-auto rounded-2xl bg-white/80 shadow-sm flex items-center justify-center text-3xl">🛒</div>
-                      <p class="mt-3 text-xs font-semibold tracking-[0.2em] uppercase text-slate-500">Concept Demo</p>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2.5">Mini E-Commerce Landing</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                      A lightweight storefront concept with product highlights, featured collections, and a simple purchase flow.
-                    </p>
-                    <div class="flex gap-2 mb-5 flex-wrap">
-                      <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">HTML</span>
-                      <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">CSS</span>
-                      <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">JavaScript</span>
-                    </div>
-                    <div class="border-t border-slate-100 pt-2 flex items-center justify-between">
-                      <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors" title="Demo only">
-                      <i class="fa-brands fa-github text-xl"></i>
-                      </a>
-                      <a href="#" class="px-4 py-2 rounded-full border border-slate-300 text-sm font-semibold text-slate-800 transition-all 
-                    hover:bg-slate-100 hover:border-slate-400">
-            View Project
-          </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Project Card 5 -->
-                <div class="bg-white border border-slate-200 rounded-xl p-4 pb-2 shadow-sm">
-                  <div class="w-full h-56 rounded-lg overflow-hidden mb-4 bg-gradient-to-br from-[#eef2ff] via-[#f8fbff] to-[#ecfeff] flex items-center justify-center">
-                    <div class="text-center">
-                      <div class="w-20 h-20 mx-auto rounded-2xl bg-white/80 shadow-sm flex items-center justify-center text-3xl">💼</div>
-                      <p class="mt-3 text-xs font-semibold tracking-[0.2em] uppercase text-slate-500">Concept Demo</p>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2.5">Personal Portfolio Builder</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                      A polished portfolio concept for presenting skills, projects, and contact details with a strong personal brand.
-                    </p>
-                    <div class="flex gap-2 mb-5 flex-wrap">
-                      <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">Next.js</span>
-                      <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">Framer Motion</span>
-                      <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">Responsive UI</span>
-                    </div>
-                    <div class="border-t border-slate-100 pt-2 flex items-center justify-between">
-                      <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors" title="Demo only">
-                      <i class="fa-brands fa-github text-xl"></i>
-                      </a>
-                      <a href="#" class="px-4 py-2 rounded-full border border-slate-300 text-sm font-semibold text-slate-800 transition-all 
-                    hover:bg-slate-100 hover:border-slate-400">
-            View Project
-          </a>
-                    </div>
-                  </div>
-                </div>
-
-        </div>
     </section>
-    <footer id="contact" class="relative w-full px-6 md:px-12 pb-12 pt-20 overflow-hidden">
-  <div class="absolute inset-0 -z-1 bg-[radial-gradient(ellipse_at_bottom,#cfc3f597,transparent_70%)]"></div>
-  <div class="relative max-w-8xl mx-auto rounded-[2.5rem] border border-white/60 bg-white/40 backdrop-blur-2xl shadow-[0_8px_40px_rgba(22,111,99,0.06)] overflow-hidden">
-    <div class="absolute inset-0 rounded-[2.5rem] border border-white/80 pointer-events-none"></div>
 
-    <div class="grid gap-8 lg:grid-cols-2 p-6 sm:p-8 md:p-12 lg:p-14">
-      <div class="flex flex-col justify-center ml-0 lg:ml-8">
-        <div class="flex items-center gap-3">
-          <span class="inline-block w-8 h-0.5 rounded-full bg-gradient-to-r from-[#5b4fd1] via-[#8c65db] to-[#a0cfff] shadow-[0_8px_32px_rgba(91,79,209,0.12)]"></span>
-          <p class="text-xs font-bold tracking-[0.3em] uppercase text-sky-500">
-          Contact
-          </p>
+    <!-- TECH STACK SECTION -->
+    <section id="tech-stack" class="py-16 md:py-24">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
+        <div class="mb-12 text-center">
+          <span class="text-sm tracking-[0.15em] uppercase text-sky-500 font-semibold">CORE COMPETENCIES</span>
+          <h2 class="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Tech Stack & Tools</h2>
         </div>
-        
-        <h2 class="mt-5 text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight tracking-tight">
-          Let’s build something <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5b4fd1] via-[#8c65db] to-[#a0cfff]">meaningful.</span>
-        </h2>
-        
-        <p class="mt-5 max-w-md text-base leading-relaxed text-slate-600 font-medium">
-          Whether you have a question, a project idea, or just want to say hi, my inbox is always open. Let's connect!
-        </p>
 
-        <div class="mt-10 flex flex-wrap gap-4 items-center">
-           <a
-                href="mailto:Ntkngan442266IT@gmail.com"
-                class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#3b82f6] to-[#a855f7] px-5 py-3 text-sm font-bold text-white transition-transform hover:scale-105 hover:shadow-lg"
-              >
-                <i class="fa-solid fa-envelope"></i>
-                Email me
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex lg:flex-wrap lg:justify-center gap-8 lg:gap-10">
+          
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="C++" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">C++</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1 leading-relaxed">Object Oriented Programming</p>
+          </div>
+
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="C#" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">C#</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1">.NET Development</p>
+          </div>
+
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="Java" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">Java</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1">Backend Programming</p>
+          </div>
+
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="Spring Boot" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">Spring Boot</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1">REST API</p>
+          </div>
+
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="React" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">React</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1">Front-end UI</p>
+          </div>
+
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="JavaScript" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">JavaScript</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1">Interactive Web</p>
+          </div>
+
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="HTML" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">HTML5</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1">Semantic Web Structure</p>
+          </div>
+
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="CSS3" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">CSS3</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1">Responsive & Modern Styling</p>
+          </div>
+
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="SQL" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">SQL</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1">Database</p>
+          </div>
+
+          <!-- Divider (Chỉ hiện trên màn hình lớn) -->
+          <div class="hidden lg:block shrink-0 w-[1px] h-28 bg-gray-500/70 mx-3 self-center rounded-full"></div>
+
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="Docker" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">Docker</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1">Containerization</p>
+          </div>
+
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="Postman" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">Postman</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1">API Testing & Development</p>
+          </div>
+
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="Git" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">Git</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1">Version Control</p>
+          </div>
+
+          <div class="group flex flex-col items-center text-center transition duration-300 hover:-translate-y-2 lg:w-28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-12 h-12 md:w-14 md:h-14 mb-3 transition duration-300 group-hover:scale-110" alt="GitHub" />
+            <h3 class="font-semibold text-gray-800 text-sm md:text-base">GitHub</h3>
+            <p class="text-[11px] md:text-xs text-gray-500 mt-1">Code Collaboration</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-16 md:py-24 relative">
+      <div class="bg-frame absolute inset-0 z-[-2] pointer-events-none"></div>
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+        <div class="mb-12 text-center">
+          <span class="text-sm tracking-[0.15em] uppercase text-sky-500 font-semibold">My Projects</span>
+          <h2 class="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Featured Projects</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          
+          <!-- Project Card 1 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 pb-4 shadow-sm flex flex-col">
+            <div class="w-full h-48 md:h-56 rounded-lg overflow-hidden mb-4 shrink-0">
+              <img src="image/TroOnline.png" alt="Online Room Rental System" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col flex-grow">
+              <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-2">Online Room Rental System</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">Online Room Rental System an efficient management system built to facilitate room rental and management...</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">React.js</span>
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">Spring Boot</span>
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">Java</span>
+              </div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between mt-auto">
+                <a href="https://github.com/Nanie426/TimTroTrucTuyen.git" class="text-slate-400 hover:text-slate-900 transition-colors" title="GitHub Repo"><i class="fa-brands fa-github text-xl"></i></a>
+                <a href="#" class="px-4 py-1.5 rounded-full border border-slate-300 text-sm font-semibold text-slate-800 transition-all hover:bg-slate-100 hover:border-slate-400">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 pb-4 shadow-sm flex flex-col">
+            <div class="w-full h-48 md:h-56 rounded-lg overflow-hidden mb-4 shrink-0">
+              <img src="image/QuanLyThuVien.png" alt="Library Management System" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col flex-grow">
+              <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-2">Library Management System</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">Library Management System aims to automate the library management system, making it easier to track books...</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">C++</span>
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">C#</span>
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">Java</span>
+              </div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between mt-auto">
+                <a href="https://github.com/Nanie426/TimTroTrucTuyen.git" class="text-slate-400 hover:text-slate-900 transition-colors" title="GitHub Repo"><i class="fa-brands fa-github text-xl"></i></a>
+                <a href="#" class="px-4 py-1.5 rounded-full border border-slate-300 text-sm font-semibold text-slate-800 transition-all hover:bg-slate-100 hover:border-slate-400">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 pb-4 shadow-sm flex flex-col">
+            <div class="w-full h-48 md:h-56 rounded-lg overflow-hidden mb-4 bg-gradient-to-br from-[#e8f7f3] via-[#f8fbff] to-[#e9eefc] flex items-center justify-center shrink-0">
+              <div class="text-center">
+                <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-2xl bg-white/80 shadow-sm flex items-center justify-center text-3xl">📅</div>
+                <p class="mt-3 text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-slate-500">Concept Demo</p>
+              </div>
+            </div>
+            <div class="flex flex-col flex-grow">
+              <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-2">Study Planner Dashboard</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">A student planning tool for organizing classes, deadlines, and weekly goals in one clean dashboard.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">React.js</span>
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">Tailwind CSS</span>
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">Chart.js</span>
+              </div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between mt-auto">
+                <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors" title="Demo only"><i class="fa-brands fa-github text-xl"></i></a>
+                <a href="#" class="px-4 py-1.5 rounded-full border border-slate-300 text-sm font-semibold text-slate-800 transition-all hover:bg-slate-100 hover:border-slate-400">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 pb-4 shadow-sm flex flex-col">
+            <div class="w-full h-48 md:h-56 rounded-lg overflow-hidden mb-4 bg-gradient-to-br from-[#fff3e6] via-[#fffaf4] to-[#edf4ff] flex items-center justify-center shrink-0">
+              <div class="text-center">
+                <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-2xl bg-white/80 shadow-sm flex items-center justify-center text-3xl">🛒</div>
+                <p class="mt-3 text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-slate-500">Concept Demo</p>
+              </div>
+            </div>
+            <div class="flex flex-col flex-grow">
+              <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-2">Mini E-Commerce Landing</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">A lightweight storefront concept with product highlights, featured collections, and a simple purchase flow.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">HTML</span>
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">CSS</span>
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">JavaScript</span>
+              </div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between mt-auto">
+                <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors" title="Demo only"><i class="fa-brands fa-github text-xl"></i></a>
+                <a href="#" class="px-4 py-1.5 rounded-full border border-slate-300 text-sm font-semibold text-slate-800 transition-all hover:bg-slate-100 hover:border-slate-400">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 pb-4 shadow-sm flex flex-col">
+            <div class="w-full h-48 md:h-56 rounded-lg overflow-hidden mb-4 bg-gradient-to-br from-[#eef2ff] via-[#f8fbff] to-[#ecfeff] flex items-center justify-center shrink-0">
+              <div class="text-center">
+                <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-2xl bg-white/80 shadow-sm flex items-center justify-center text-3xl">💼</div>
+                <p class="mt-3 text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-slate-500">Concept Demo</p>
+              </div>
+            </div>
+            <div class="flex flex-col flex-grow">
+              <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-2">Personal Portfolio Builder</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">A polished portfolio concept for presenting skills, projects, and contact details with a strong personal brand.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">Next.js</span>
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">Framer Motion</span>
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">Responsive UI</span>
+              </div>
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between mt-auto">
+                <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors" title="Demo only"><i class="fa-brands fa-github text-xl"></i></a>
+                <a href="#" class="px-4 py-1.5 rounded-full border border-slate-300 text-sm font-semibold text-slate-800 transition-all hover:bg-slate-100 hover:border-slate-400">View Project</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <footer id="contact" class="relative w-full px-5 sm:px-8 lg:px-12 pb-12 pt-16 md:pt-24 overflow-hidden">
+      <div class="absolute inset-0 -z-1 bg-[radial-gradient(ellipse_at_bottom,#cfc3f597,transparent_70%)]"></div>
+      <div class="relative max-w-6xl mx-auto rounded-[2rem] md:rounded-[2.5rem] border border-white/60 bg-white/40 backdrop-blur-2xl shadow-[0_8px_40px_rgba(22,111,99,0.06)] overflow-hidden">
+        <div class="absolute inset-0 rounded-[2rem] md:rounded-[2.5rem] border border-white/80 pointer-events-none"></div>
+
+        <div class="grid gap-10 lg:grid-cols-2 p-6 sm:p-8 md:p-12 lg:p-14">
+          
+          <!-- Left Col -->
+          <div class="flex flex-col justify-center">
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-8 h-0.5 rounded-full bg-gradient-to-r from-[#5b4fd1] via-[#8c65db] to-[#a0cfff] shadow-[0_8px_32px_rgba(91,79,209,0.12)]"></span>
+              <p class="text-xs font-bold tracking-[0.3em] uppercase text-sky-500">Contact</p>
+            </div>
+            
+            <h2 class="mt-5 text-3xl md:text-5xl font-extrabold text-slate-800 leading-tight tracking-tight">
+              Let’s build something <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5b4fd1] via-[#8c65db] to-[#a0cfff]">meaningful.</span>
+            </h2>
+            
+            <p class="mt-5 max-w-md text-sm md:text-base leading-relaxed text-slate-600 font-medium">
+              Whether you have a question, a project idea, or just want to say hi, my inbox is always open. Let's connect!
+            </p>
+
+            <div class="mt-8 flex flex-wrap gap-4 items-center">
+              <a href="mailto:Ntkngan442266IT@gmail.com" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#3b82f6] to-[#a855f7] px-6 py-3 text-sm font-bold text-white transition-transform hover:scale-105 hover:shadow-lg">
+                <i class="fa-solid fa-envelope"></i> Email me
               </a>
-          <a
-            href="#About-me"
-            class="group inline-flex items-center gap-2 rounded-full border-2 border-slate-200 bg-transparent px-5 py-3 text-sm font-semibold text-slate-500 transition-all hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900"
-          >
-            Back to top
-            <i class="fa-solid fa-arrow-up text-xs transition-transform group-hover:-translate-y-1"></i>
-          </a>
+              <a href="#About-me" class="group inline-flex items-center gap-2 rounded-full border-2 border-slate-200 bg-transparent px-6 py-3 text-sm font-semibold text-slate-500 transition-all hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900">
+                Back to top
+                <i class="fa-solid fa-arrow-up text-xs transition-transform group-hover:-translate-y-1"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Right Col (Social Links) -->
+          <div class="flex flex-col gap-4">
+            
+            <a href="https://github.com/Nanie426" class="group flex items-center justify-between rounded-3xl bg-white/60 p-2.5 border border-white/50 shadow-sm transition-all hover:bg-white hover:shadow-md hover:border-slate-300">
+              <div class="flex items-center gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 transition-colors group-hover:bg-slate-900 group-hover:text-white">
+                  <i class="fa-brands fa-github text-2xl"></i>
+                </div>
+                <div>
+                  <p class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">GitHub</p>
+                  <p class="text-sm md:text-base font-semibold text-slate-800">Explore my repositories</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-right pr-2 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-slate-900"></i>
+            </a>
+
+            <a href="https://www.facebook.com/nguyenthikimngan4206" class="group flex items-center justify-between rounded-3xl bg-white/60 p-2.5 border border-white/50 shadow-sm transition-all hover:bg-white hover:shadow-md hover:border-blue-400/50">
+              <div class="flex items-center gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white">
+                  <i class="fa-brands fa-facebook-f text-xl"></i>
+                </div>
+                <div>
+                  <p class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Facebook</p>
+                  <p class="text-sm md:text-base font-semibold text-slate-800">Nguyễn Thị Kim Ngân</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-right pr-2 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-blue-600"></i>
+            </a>
+
+            <a href="tel:0944043457" class="group flex items-center justify-between rounded-3xl bg-white/60 p-2.5 border border-white/50 shadow-sm transition-all hover:bg-white hover:shadow-md hover:border-[#166F63]/50">
+              <div class="flex items-center gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#166F63]/10 text-[#166F63] transition-colors group-hover:bg-[#166F63] group-hover:text-white">
+                  <i class="fa-solid fa-phone text-xl"></i>
+                </div>
+                <div>
+                  <p class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Phone</p>
+                  <p class="text-sm md:text-base font-semibold text-slate-800">0944 043 457</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-right pr-2 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-[#166F63]"></i>
+            </a>
+
+            <a href="https://www.instagram.com/kimngan_4206/" class="group flex items-center justify-between rounded-3xl bg-white/60 p-2.5 border border-white/50 shadow-sm transition-all hover:bg-white hover:shadow-md hover:border-pink-400/50">
+              <div class="flex items-center gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-pink-50 text-pink-500 transition-colors group-hover:bg-pink-500 group-hover:text-white">
+                  <i class="fa-brands fa-instagram text-2xl"></i>
+                </div>
+                <div>
+                  <p class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Instagram</p>
+                  <p class="text-sm md:text-base font-semibold text-slate-800">@kimngan_4206</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-right pr-2 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-pink-500"></i>
+            </a>
+
+            <a href="https://sun-xseeds.slack.com/team/U07L5GAEDA8" class="group flex items-center justify-between rounded-3xl bg-white/60 p-2.5 border border-white/50 shadow-sm transition-all hover:bg-white hover:shadow-md hover:border-purple-400/50">
+              <div class="flex items-center gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-50 text-purple-600 transition-colors group-hover:bg-purple-600 group-hover:text-white">
+                  <i class="fa-brands fa-slack text-2xl"></i>
+                </div>
+                <div>
+                  <p class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Slack</p>
+                  <p class="text-sm md:text-base font-semibold text-slate-800">Join my workspace</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-right pr-2 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-purple-600"></i>
+            </a>
+
+            <div class="mt-auto flex items-center justify-center rounded-3xl bg-gradient-to-br from-[#a9b3f7af]/20 to-[#b6a3ee9f]/10 p-4 border border-white/50">
+              <p class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-black/70 text-center">
+                © 2026 Nguyen Thi Kim Ngan
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="flex flex-col gap-4 mr-0 lg:mr-8">
-        <!-- Thẻ GitHub (Màu Đen/Xám) -->
-<a href="https://github.com/Nanie426" class="group flex items-center justify-between rounded-3xl bg-white/60 p-2 border border-white/50 shadow-sm transition-all hover:bg-white hover:shadow-md hover:border-slate-300">
-  <div class="flex items-center gap-4">
-    <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 transition-colors group-hover:bg-slate-900 group-hover:text-white">
-      <i class="fa-brands fa-github text-2xl"></i>
-    </div>
-    <div>
-      <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">GitHub</p>
-      <p class="text-sm font-semibold text-slate-800">Explore my repositories</p>
-    </div>
-  </div>
-  <i class="fa-solid fa-arrow-right text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-slate-900"></i>
-</a>
-
-<!-- Thẻ Facebook (Màu Xanh dương) -->
-<a href="https://www.facebook.com/nguyenthikimngan4206" class="group flex items-center justify-between rounded-3xl bg-white/60 p-2 border border-white/50 shadow-sm transition-all hover:bg-white hover:shadow-md hover:border-blue-400/50">
-  <div class="flex items-center gap-4">
-    <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white">
-      <i class="fa-brands fa-facebook-f text-xl"></i>
-    </div>
-    <div>
-      <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Facebook</p>
-      <p class="text-sm font-semibold text-slate-800">Nguyễn Thị Kim Ngân</p>
-    </div>
-  </div>
-  <i class="fa-solid fa-arrow-right text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-blue-600"></i>
-</a>
-
-<!-- Thẻ Số điện thoại (Màu Xanh lá đậm chuẩn theo theme của bạn) -->
-<a href="tel:0944043457" class="group flex items-center justify-between rounded-3xl bg-white/60 p-2 border border-white/50 shadow-sm transition-all hover:bg-white hover:shadow-md hover:border-[#166F63]/50">
-  <div class="flex items-center gap-4">
-    <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#166F63]/10 text-[#166F63] transition-colors group-hover:bg-[#166F63] group-hover:text-white">
-      <i class="fa-solid fa-phone text-xl"></i>
-    </div>
-    <div>
-      <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Phone</p>
-      <p class="text-sm font-semibold text-slate-800">0944 043 457</p>
-    </div>
-  </div>
-  <i class="fa-solid fa-arrow-right text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-[#166F63]"></i>
-</a>
-
-<!-- Thẻ Instagram (Màu Hồng/Đỏ tía) -->
-<a href="https://www.instagram.com/kimngan_4206/" class="group flex items-center justify-between rounded-3xl bg-white/60 p-2 border border-white/50 shadow-sm transition-all hover:bg-white hover:shadow-md hover:border-pink-400/50">
-  <div class="flex items-center gap-4">
-    <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-pink-50 text-pink-500 transition-colors group-hover:bg-pink-500 group-hover:text-white">
-      <i class="fa-brands fa-instagram text-2xl"></i>
-    </div>
-    <div>
-      <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Instagram</p>
-      <p class="text-sm font-semibold text-slate-800">@kimngan_4206</p>
-    </div>
-  </div>
-  <i class="fa-solid fa-arrow-right text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-pink-500"></i>
-</a>
-
-<!-- Thẻ Slack (Màu Tím) -->
-<a href="https://sun-xseeds.slack.com/team/U07L5GAEDA8" class="group flex items-center justify-between rounded-3xl bg-white/60 p-2 border border-white/50 shadow-sm transition-all hover:bg-white hover:shadow-md hover:border-purple-400/50">
-  <div class="flex items-center gap-4">
-    <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-purple-50 text-purple-600 transition-colors group-hover:bg-purple-600 group-hover:text-white">
-      <i class="fa-brands fa-slack text-2xl"></i>
-    </div>
-    <div>
-      <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Slack</p>
-      <p class="text-sm font-semibold text-slate-800">Join my workspace</p>
-    </div>
-  </div>
-  <i class="fa-solid fa-arrow-right text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-purple-600"></i>
-</a>
-
-        <div class="mt-auto flex items-center justify-center rounded-3xl bg-gradient-to-br from-[#a9b3f7af]/20 to-[#b6a3ee9f]/10 p-4 border border-white/50">
-           <p class="text-xs font-bold uppercase tracking-[0.2em] text-black/70 text-center">
-             © 2026 Nguyen Thi Kim Ngan
-           </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-  
-    </main>
-    <script src="script.js"></script>
-  </body>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
 </html>
